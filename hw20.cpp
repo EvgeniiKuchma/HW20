@@ -7,9 +7,11 @@ void showArr(int arr[],const int length)
 {
 	for (int i = 0; i < length; i++)
 	{
-	std::cout << arr[i]<<", ";
+	std::cout << arr[i] << "\t";
+	if (i > 0 && i % 10 == 0 )
+	std::cout << "\n";
 	}
-	std::cout << "\b\b.\n\n";
+	std::cout << "\n\n";
 }
 int searchIndex(int arr[], const int length, int n, int begin = 0)
 {
